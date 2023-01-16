@@ -7,7 +7,7 @@ import javax.swing.BorderFactory;
 import javax.swing.JButton;
 import javax.swing.border.Border;
 
-public class MyJButton extends JButton implements ActionListener{
+public class MyJButton extends JButton {
 	
 	Font myButtonFont = new Font("Lucida console",Font.PLAIN,20); 	
 	
@@ -32,7 +32,7 @@ public class MyJButton extends JButton implements ActionListener{
 		this.setForeground(mBtnForegroundColor);
 		this.setFocusable(false);			
 		this.setBorder(mbb);
-		this.addActionListener(this);
+		
 		
 	}
 
@@ -92,9 +92,5 @@ public class MyJButton extends JButton implements ActionListener{
 		this.height = height;
 	}
 
-	@Override
-	public void actionPerformed(ActionEvent e) {
-		// TODO Auto-generated method stub
-		
-	}
+	
 }
